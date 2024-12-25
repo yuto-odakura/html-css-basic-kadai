@@ -1,0 +1,56 @@
+/* 
+【フォントの種類】
+bodyのフォント種類を、「"Arial", "Meiryo", sans-serif」 にします。
+
+【フォントサイズ】
+ルート要素のフォントサイズを20pxにします。
+
+【フォントカラー】
+「MY PROFILE」の「M」をスカイブルーに、「P」をピンクにしてください。
+文字色はスカイブルーを キーワード で、ピンクを rgb(255, 192, 203) として指定します。
+先に指定したピンク、スカイブルーと同じ色を次の要素にも指定してください。
+「名前」「血液型」「好きな食べ物」の見出しにはピンク
+「生年月日」「趣味」「プログラミングを始めた理由」の見出しにはスカイブルー
+☆ヒント：効率よく同じスタイルを使いまわすには、クラスを使うと便利です。
+
+【h1の装飾】
+h1のフォントには、Googleフォント「Josefin Sans」 を使用してください。
+h1のフォントサイズは、ルート要素の2倍になるようにしてください。
+h1の総称フォントは、「sans-serif」 を使用してください。
+h1の文字間は、文字の大きさに対して1.2倍になるようにしてください。
+h1に影を付けてください。影の大きさや色は自由です。
+h1の下に3px（カラー：rgb(115, 115, 114)）の実線を付けてください。
+h1に上記以外の装飾は不要です。
+
+【その他の装飾】
+テキストは、全て中央寄せにしてください。
+「名前」～「血液型」までの要素をid属性basicのdivタグで囲います。
+次に子孫要素の考え方を利用して、「侍太郎」「1990年1月1日」「O型」を太字にしてください。
+それ以外のp要素は太字にならないよう注意してください。 */
+
+html{
+    font-size: 20px;
+    text-align: center;
+}
+body{
+   font-family: "Arial", "Meiryo", sans-serif;
+}
+.blue{
+    color: skyblue;
+}
+.pink{
+    color: rgb(255, 192, 203);
+}
+h1{
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    letter-spacing: 1.2em;
+    text-shadow: 1px 1px 2px gray;
+    border-bottom: solid 3px rgb(115, 115, 114);
+}
+#basic > p{
+    font-weight: bold;
+}
